@@ -1,0 +1,29 @@
+<div class="home">
+   <section class="slider">
+      
+   </section>
+      <section class="section_all-news-content">
+         <aside class="section_news">
+
+         </aside>   
+         <aside class="section_news">
+
+         </aside>
+         <aside class="section_news">
+
+         </aside>  
+      </section>
+   <section class="section_content">
+      {{#each Array}}
+      <section class="sub-section_content">
+         <a href="{{this.shows_id}}">
+            <section class="section_anime-img">
+               <img src="{{this.picture_id}}">
+               <p>{{this.shows_id}}</p>
+            </section>
+         </a>
+      </section>
+      {{/each}}
+   </section>
+</div>
+{{>footer}}
